@@ -129,8 +129,13 @@ ul li {
 /* Mobile Responsive Design */
 @media screen and (max-width: 768px) {
   /* Hide iframe in phone layout */
+  body, html {
+    background-color: rgb(50, 46, 46) !important; 
+    color: white !important;
+    font-family: Raleway, sans-serif;
+  }
   #aboutbody {
-    background-color:none !important;
+    background-color:transparent !important;
     color: #fff;
    
    
@@ -145,6 +150,58 @@ ul li {
     width: 100%;
     text-align: center;
     top: -30vh; /* Move heading higher */
+    left: 0;
+  }
+
+  /* Move summary below heading */
+  #summary {
+    position: relative;
+    width: 90%;
+    max-width: 455px;
+    margin: 5vh auto 0;
+    text-align: center;
+    top: 5vh;
+    left: 0;
+  }
+
+  /* Place social icons at the bottom */
+  #social {
+    position: absolute;
+    top:10vh;
+    left: 50%;
+    transform: translateX(-80%);
+    
+    justify-content: center;
+    width: 100%;
+  }
+
+  #social div {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px){
+  /* Hide iframe in phone layout */
+  body, html {
+    background-color: rgb(50, 46, 46) !important; 
+    color: white !important;
+    font-family: Raleway, sans-serif;
+  }
+  #aboutbody {
+    background-color: transparent !important;
+    color: #fff;
+  }
+  
+  #ifr {
+    display: none;
+  }
+
+  /* Adjust heading position */
+  #heading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -35vh; /* Move heading higher */
     left: 0;
   }
 
