@@ -1,18 +1,17 @@
 import "./App.css";
-//import { Unity, useUnityContext } from "react-unity-webgl";
-//import ui from "./module.mjs";
-
 import Rooted from "./components/Rooted";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Rooted />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
 export default App;
+
 //end note instead of about
 //shimmer
 //text glitch effect:color:rgb(255, 255, 255);
