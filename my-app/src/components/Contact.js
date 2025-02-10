@@ -21,7 +21,7 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="https://png.pngtree.com/element_our/md/20180626/md_5b321ca3631b8.png"
+            src="https://freelogopng.com/images/all_img/1656996524linkedin-app-icon.png"
             width="20px"
             height="20px"
           />
@@ -34,7 +34,7 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+            src="https://play-lh.googleusercontent.com/EL6k5SiLnilTUEZ7Pv8nKDSHdrTwAujkwhEhLPZKhNOzSctOEeFW0PeeMOd_fSRxbMXM"
             width="20px"
             height="20px"
           />
