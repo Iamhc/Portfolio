@@ -1,14 +1,16 @@
 import Home from "./Home";
 import About from "./About";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 const Rooted = () => {
   return (
-    <div>
+    <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </div>
+    </HashRouter>
   );
 };
+
 export default Rooted;
