@@ -12,6 +12,7 @@ body, html {
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
+  background-color: transparent;
   font-size: 17px;
   font-weight: lighter;
   z-index: 10;
@@ -38,12 +39,12 @@ body, html {
 
 /* Remove unwanted navbar background */
 #home {
-  background: none !important;
+  background: transparent !important;
 }
 
 /* About Section Styling */
 #aboutbody {
-  background-color: #121212; 
+  background-color: transparent; 
   color: #fff;
   min-height: 100vh;
  
