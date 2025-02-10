@@ -1,0 +1,176 @@
+/* Global Reset */
+/* Ensure background and text colors are applied properly */
+body, html {
+  background-color: rgb(50, 46, 46) !important; 
+  color: white !important;
+  font-family: Raleway, sans-serif;
+}
+
+/* Navbar Styling */
+#navel {
+  margin-left: 10vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 17px;
+  font-weight: lighter;
+  z-index: 10;
+}
+
+/* Navbar Links */
+#navel div {
+  margin-left: 20px;
+  color: white;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+#navel div:hover {
+  color: khaki;
+  cursor: pointer;
+  border-bottom: 2px solid khaki;
+}
+
+/* Active Link */
+.activate {
+  color: khaki;
+  border-bottom: 2px solid khaki;
+}
+
+/* Remove unwanted navbar background */
+#home {
+  background: none !important;
+}
+
+/* About Section Styling */
+#aboutbody {
+  background-color: #121212; 
+  color: #fff;
+  min-height: 100vh;
+ 
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  color: khaki;
+  text-align: center;
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+  padding-left: 10px;
+  border-left: 3px solid #f5a623;
+}
+
+/* Summary Section */
+#summary {
+  position: fixed;
+  width: 455px;
+  height: 200px;
+  top: 40vh;
+  left: 10vh;
+  text-align: center;
+}
+
+/* Heading Styling */
+#heading {
+  position: fixed;
+  width: 455px;
+  height: 100px;
+  top: 35vh;
+  left: 10vh;
+  color: khaki;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Background Elements */
+#ifr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Social Media Icons */
+#social {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+#social div {
+  margin: 0 10px;
+}
+
+/* Responsive Styles for Mobile */
+
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Hide iframe in phone layout */
+  #aboutbody {
+    background-color:none !important;
+    color: #fff;
+   
+   
+  }
+  #ifr {
+    display: none;
+  }
+
+  /* Adjust heading position */
+  #heading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -35vh; /* Move heading higher */
+    left: 0;
+  }
+
+  /* Move summary below heading */
+  #summary {
+    position: relative;
+    width: 90%;
+    max-width: 455px;
+    margin: 5vh auto 0;
+    text-align: center;
+    top: 5vh;
+    left: 0;
+  }
+
+  /* Place social icons at the bottom */
+  #social {
+    position: absolute;
+    top:10vh;
+    left: 50%;
+    transform: translateX(-80%);
+    
+    justify-content: center;
+    width: 100%;
+  }
+
+  #social div {
+    margin: 0 5px;
+  }
+}
