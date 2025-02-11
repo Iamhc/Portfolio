@@ -11,7 +11,7 @@ const About = () => {
       <div className="about-container">
         <h2>Education</h2>
         <p>
-          🎓 B.Tech in Information Technology (2023-2027) <br></br>
+          🎓 B.Tech in Information Technology (2023-2027) <br />
           Guru Gobind Singh Indraprastha University, Delhi
         </p>
 
@@ -53,9 +53,15 @@ const About = () => {
         <h2>Soft Skills</h2>
         <ul>
           <li>Communication</li>
-          <li> Problem-Solving & Critical Thinking</li>
+          <li>Problem-Solving & Critical Thinking</li>
           <li>Event Organizing</li>
         </ul>
+
+        <h2>Contact</h2>
+        <p>
+          <strong>Email:</strong> himanshuchaudhary586@gmail.com <br />
+          <strong>Phone:</strong> 7678689822
+        </p>
       </div>
       <Contact />
     </div>
