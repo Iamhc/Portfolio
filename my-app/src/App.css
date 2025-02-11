@@ -340,3 +340,8 @@ ul li {
   padding: 20px;
 }
 
+#contactsum{
+  font-family: Arial, sans-serif !important; /* or */
+font-family: sans-serif; /* or */
+font-family: inherit; 
+}

@@ -11,6 +11,11 @@ let Summary = () => {
       branding and social media content creation. My work reflects a blend of
       creativity and technical precision, ensuring both aesthetics and
       functionality in every project.
+      <div id="contactsum">
+        <br></br>
+        Email:himanshuchaudhary586@gmail.com
+        <br></br>Contact:7678689822
+      </div>
     </div>
   );
 };
