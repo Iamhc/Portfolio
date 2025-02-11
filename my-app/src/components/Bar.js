@@ -11,6 +11,8 @@ let Bar = () => {
       setActiveLink("home");
     } else if (location.pathname === "/about") {
       setActiveLink("about");
+    } else if (location.pathname === "/projects") {
+      setActiveLink("projects");
     }
   }, [location.pathname]); // Run effect when location changes
 
@@ -25,6 +27,15 @@ let Bar = () => {
       <Link to="/about" style={{ textDecoration: "none" }}>
         <div id="about" className={activeLink === "about" ? "activate" : ""}>
           About
+        </div>
+      </Link>
+
+      <Link to="/projects" style={{ textDecoration: "none" }}>
+        <div
+          id="projects"
+          className={activeLink === "projects" ? "activate" : ""}
+        >
+          Projects
         </div>
       </Link>
     </div>

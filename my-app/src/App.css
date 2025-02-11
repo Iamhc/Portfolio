@@ -125,6 +125,44 @@ ul li {
 }
 
 /* Responsive Styles for Mobile */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  background: #333333;
+  color: khaki;
+  text-align: center;
+  font-weight: lighter;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 4px rgba(255, 215, 0, 0.3);
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#cardstuff{
+  color:white;
+  font-weight: 300;
+}
 
 
 /* Mobile Responsive Design */
@@ -179,7 +217,38 @@ ul li {
   #social div {
     margin: 0 5px;
   }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    padding: 15px;
+    background: #333333;
+    color: khaki;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.3);
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
+
 
 @media screen and (min-width: 500px) and (max-width: 1024px){
   /* Hide iframe in phone layout */
@@ -232,3 +301,12 @@ ul li {
     margin: 0 5px;
   }
 }
+
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
