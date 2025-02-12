@@ -48,7 +48,7 @@ const Project = () => {
       image: Skinoy,
       description:
         "An e-commerce platform for skincare products. Used: HTML, CSS, JS.",
-      link: "https://github.com/Iamhc/Skinoy",
+      link: "https://skinoy-five.vercel.app/",
     },
     {
       title: "Home Design",
