@@ -162,8 +162,14 @@ ul li {
 #cardstuff{
   color:white;
   font-weight: 300;
+  text-decoration: none;
 }
 
+.project-card-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color same */
+  /* Ensures full card clickability */
+}
 
 /* Mobile Responsive Design */
 @media screen and (max-width: 768px) {
@@ -220,14 +226,21 @@ ul li {
   }
 
   .projects-container {
-    margin:20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     gap: 20px;
   }
-
+  
+  .project-card-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color same */
+    display: block; /* Makes the whole card clickable */
+    width: 100%; /* Ensures full card clickability */
+  }
+  
   .project-card {
     width: 90%;
     max-width: 350px;
@@ -238,19 +251,18 @@ ul li {
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-
+  
   .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.3);
   }
-
+  
   .project-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
   }
-}
-
+}  
 
 @media screen and (min-width: 500px) and (max-width: 1024px){
   /* Hide iframe in phone layout */
@@ -259,6 +271,7 @@ ul li {
     color: white !important;
     font-family: Raleway, sans-serif;
   }
+
   #aboutbody {
     background-color: transparent !important;
     color: #fff;
@@ -330,6 +343,11 @@ ul li {
     width: 100%;
     height: auto;
     border-radius: 8px;
+  }
+  .project-card-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color same */
+    /* Ensures full card clickability */
   }
 }
 

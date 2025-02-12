@@ -34,7 +34,7 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="https://play-lh.googleusercontent.com/EL6k5SiLnilTUEZ7Pv8nKDSHdrTwAujkwhEhLPZKhNOzSctOEeFW0PeeMOd_fSRxbMXM"
+            src="https://yt3.ggpht.com/a-/AAuE7mB2k0wtjRtVLy13o72mHZKkrYwlz9qDEuW-4w=s900-mo-c-c0xffffffff-rj-k-no"
             width="20px"
             height="20px"
           />

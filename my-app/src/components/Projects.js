@@ -20,42 +20,47 @@ const Project = () => {
       image: LoginSystem,
       description:
         "A secure login system using the MERN stack (MongoDB, Express.js, React, Node.js).",
+      link: "https://contact-us-mn.vercel.app/", // Added link
     },
     {
       title: "Swiggy Clone",
       image: SwiggyClone,
       description:
         "A Swiggy-like food delivery app using real-time Swiggy API data. Used: React, Tailwind, APIs.",
+      link: "https://github.com/Iamhc/Food-delievery",
     },
     {
       title: "Afro Hair Business Website",
       image: AfroHair,
       description:
         "A website designed for an Afro Hair business using Bootstrap and JavaScript. Used: Bootstrap, JS.",
+      link: "https://github.com/Iamhc/Afro-hair",
     },
     {
       title: "Chloro Project",
       image: Chloro,
       description:
         "An e-commerce platform for skincare and beauty products. Used: Next.js, Tailwind.",
+      link: "https://github.com/Iamhc/chloro-website",
     },
     {
-      title: "Form Builder",
-      image: Form,
+      title: "Skinoy E-Commerce",
+      image: Skinoy,
       description:
-        "A dynamic form builder application to create custom forms. Used: HTML, CSS, JS, Spline.",
+        "An e-commerce platform for skincare products. Used: HTML, CSS, JS.",
     },
     {
       title: "Home Design",
       image: Front,
       description:
         "A showcase of front-end UI/UX design skills. Used: React.js, Tailwind.",
+      link: "https://github.com/Iamhc/Main-section",
     },
     {
-      title: "Skinoy E-Commerce",
-      image: Skinoy,
-      description:
-        "An e-commerce platform for skincare and beauty products. Used: HTML, CSS, JS.",
+      title: "Form",
+      image: Form,
+      description: "A form application. Used: HTML, CSS, JS, Spline.",
+      link: "https://github.com/Iamhc/website-form",
     },
   ];
 
@@ -66,15 +71,23 @@ const Project = () => {
 
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-            <p>{project.title}</p>
-            <p id="cardstuff">{project.description}</p>
-          </div>
+          <a
+            key={index}
+            href={project.link || "#"} // Adds link if available
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card-link"
+          >
+            <div className="project-card">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+              <p>{project.title}</p>
+              <p id="cardstuff">{project.description}</p>
+            </div>
+          </a>
         ))}
       </div>
 
