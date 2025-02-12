@@ -55,7 +55,7 @@ const Project = () => {
       image: Front,
       description:
         "A showcase of front-end UI/UX design skills. Used: React.js, Tailwind.",
-      link: "https://github.com/Iamhc/Main-section",
+      link: "https://main-section.vercel.app/",
     },
     {
       title: "Form",
