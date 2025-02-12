@@ -34,7 +34,7 @@ const Project = () => {
       image: AfroHair,
       description:
         "A website designed for an Afro Hair business using Bootstrap and JavaScript. Used: Bootstrap, JS.",
-      link: "https://github.com/Iamhc/Afro-hair",
+      link: "https://afro-hair-one.vercel.app/",
     },
     {
       title: "Chloro Project",
@@ -61,7 +61,7 @@ const Project = () => {
       title: "Form",
       image: Form,
       description: "A form application. Used: HTML, CSS, JS, Spline.",
-      link: "https://github.com/Iamhc/website-form",
+      link: "https://website-form-gamma.vercel.app/",
     },
   ];
 
