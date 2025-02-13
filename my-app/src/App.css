@@ -194,9 +194,9 @@ ul li {
     position: relative;
     width: 100%;
     text-align: center;
-    top: -27vh; /* Move heading higher */
+    top: -25vh; /* Move heading higher */
     left: 0;
-   
+  
   }
 
   /* Move summary below heading */
@@ -262,9 +262,6 @@ ul li {
     height: auto;
     border-radius: 8px;
   }
-  
-
- 
 }  
 
 @media screen and (min-width: 500px) and (max-width: 1024px){
