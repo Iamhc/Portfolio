@@ -196,7 +196,7 @@ ul li {
     text-align: center;
     top: 0vh; /* Move heading higher */
     left: 0;
-   display:none;
+   
   }
 
   /* Move summary below heading */
@@ -273,111 +273,7 @@ ul li {
     margin: 5px;
   }*/
   
-  .line {
-    width: 1px;
  
-    background-color: khaki;
-    display: inline-block;
-    margin: 5px;
-  }
-  #line-1{
-    position: relative;
-    top:30vh;
-    left:89vw;
-    transform:rotate(-40deg);
-    height:100px;
-  }
-  #line-2{
-    position: relative;
-    top:20vh;
-    left:89vw;
-    transform:rotate(40deg);
-    height:50px;
-  }
-  #line-3{
-    position: relative;
-    top:19vh;
-    left:76vw;
-    transform:rotate(-60deg);
-    height:50px;
-  }
-  #line-4{
-    position: relative;
-    top:22vh;
-    left:77vw;
-    transform:rotate(65deg);
-    height:20px;
-  }
-  #line-5{
-    position: relative;
-    top:15vh;
-    left:70.5vw;
-    transform:rotate(-20deg);
-    height:100px;
-  }
-  #line-6{
-    position: relative;
-    top:15vh;
-    left:75.5vw;
-    transform:rotate(25deg);
-    height:100px;
-  }
-  #line-7{
-    position: relative;
-    top:25vh;
-    left:60vw;
-    transform:rotate(-60deg);
-    height:100px;
-  }
-  #line-8{
-    position: relative;
-    top:1vh;
-    left:65vw;
-    transform:rotate(20deg);
-    height:50px;
-  }
-  #line-9{
-    position: relative;
-    top:15vh;
-    left:55vw;
-    transform:rotate(-40deg);
-    height:80px;
-  }
-  #line-0{
-    position: relative;
-    top:12vh;
-    left:67vw;
-    transform:rotate(0deg);
-    height:80px;
-  }
-  #line-11{
-    position: relative;
-    top:15vh;
-    left:72vw;
-    transform:rotate(25deg);
-    height:50px;
-  }
-  #line-12{
-    position: relative;
-    top:6vh;
-    left:70vw;
-    transform:rotate(-20deg);
-    height:70px;
-  }
-  #line-13{
-    position: relative;
-    top:-4vh;
-    left:60vw;
-    transform:rotate(-60deg);
-    height:70px;
-  }
-  #line-14{
-    position: relative;
-    top:0vh;
-    left:44vw;
-    transform:rotate(60deg);
-    height:90px;
-  }
 }  
 
 @media screen and (min-width: 500px) and (max-width: 1024px){
