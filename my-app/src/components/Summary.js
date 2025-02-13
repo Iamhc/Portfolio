@@ -1,5 +1,3 @@
-const divData = Array.from({ length: 15 }, (_, index) => ` `);
-
 let Summary = () => {
   return (
     <div>
@@ -15,11 +13,6 @@ let Summary = () => {
         blend of creativity and technical precision, ensuring both aesthetics
         and functionality in every project.
       </div>
-      {divData.map((_, index) => (
-  <div key={index} id={`line-${index}`} className="line"></div>
-))}
-
-      
     </div>
   );
 };
