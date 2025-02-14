@@ -170,7 +170,11 @@ ul li {
   color: inherit; /* Keeps the text color same */
   /* Ensures full card clickability */
 }
-
+@media screen and (max-width: 250px) {
+#heading{
+  display:none;
+}
+}
 /* Mobile Responsive Design */
 @media screen and (max-width: 768px) {
   /* Hide iframe in phone layout */

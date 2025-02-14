@@ -2,10 +2,12 @@ import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
 import Contact from "./Contact";
+import Android from "./Project-Pics/Android.png";
 
 const About = () => {
   return (
-    <div id="aboutbody">
+    <div id="aboutbody" >
+
       <Links />
       <Bar />
       <div className="about-container">
@@ -64,7 +66,9 @@ const About = () => {
         </p>
       </div>
       <Contact />
+      
     </div>
+   
   );
 };
 
