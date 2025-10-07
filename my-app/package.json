@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iamhc.github.io/Myportfolio/",
+  "homepage": ".",
   "dependencies": {
     "@react-three/drei": "^9.56.3",
     "@react-three/fiber": "^8.15.15",
