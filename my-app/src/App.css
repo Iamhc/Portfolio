@@ -213,7 +213,7 @@ ul li {
     max-width: 455px;
     margin: 5vh auto 0;
     text-align: center;
-    top: 5vh;
+    top: 0vh;
     left: 0;
   }
 
@@ -284,6 +284,10 @@ ul li {
     color: #fff;
   }
   
+  .about-container{
+    width:80%;
+  }
+ 
   #ifr {
     display: none;
   }

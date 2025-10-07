@@ -6,8 +6,7 @@ import Android from "./Project-Pics/Android.png";
 
 const About = () => {
   return (
-    <div id="aboutbody" >
-
+    <div id="aboutbody">
       <Links />
       <Bar />
       <div className="about-container">
@@ -20,11 +19,12 @@ const About = () => {
         <h2>Skills</h2>
         <ul>
           <li>
-            <strong>Languages:</strong> C/C++, Python, JavaScript, HTML+CSS, PHP
+            <strong>Languages:</strong> C/C++, Python, JavaScript,Typescript,
+            HTML+CSS, PHP
           </li>
           <li>
-            <strong>Libraries & Frameworks:</strong> React.js, Three.js, WebGL,
-            Express.js, Tailwind CSS
+            <strong>Libraries & Frameworks:</strong> Next js,React js, Electron
+            js, Three.js, WebGL, Express.js, Tailwind CSS
           </li>
           <li>
             <strong>Databases & Cloud:</strong> MongoDB, Vercel, Render
@@ -34,7 +34,7 @@ const About = () => {
           </li>
         </ul>
 
-        <h2>Projects</h2>
+        <h2>Experience</h2>
         <ul>
           <li>
             <strong>To-Let Globe</strong> - Full Stack Developer *Built a login
@@ -45,18 +45,12 @@ const About = () => {
             <strong>Rahul Sir Classes</strong> - Web Developer *Designed
             multiple educational websites using Wix, HTML, CSS, and JavaScript.*
           </li>
-          <li>
-            <strong>Afro Hair Business Website</strong> - Freelance Web
-            Developer *Developed a fully responsive business website with
-            Bootstrap, JavaScript, and CSS.*
-          </li>
         </ul>
 
-        <h2>Soft Skills</h2>
+        <h2>Interested areas</h2>
         <ul>
-          <li>Communication</li>
-          <li>Problem-Solving & Critical Thinking</li>
-          <li>Event Organizing</li>
+          <li>Web development</li>
+          <li>Artificial intelligence</li>
         </ul>
 
         <h2>Contact</h2>
@@ -66,9 +60,7 @@ const About = () => {
         </p>
       </div>
       <Contact />
-      
     </div>
-   
   );
 };
 
