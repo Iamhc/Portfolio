@@ -211,7 +211,7 @@ ul li {
     position: relative;
     width: 100%;
     text-align: center;
-    top: 0vh; /* Move heading higher */
+    top: 3vh; /* Move heading higher */
     left: 0;
   
   }
