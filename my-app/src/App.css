@@ -78,11 +78,11 @@ ul li {
 
 /* Summary Section */
 #summary {
-  position: fixed;
+  position: relative;
   width: 455px;
   height: 200px;
-  top: 40vh;
-  left: 10vh;
+  top: 30vh;
+  left: 25vh;
   text-align: center;
 }
 
@@ -91,8 +91,8 @@ ul li {
   position: fixed;
   width: 455px;
   height: 100px;
-  top: 35vh;
-  left: 10vh;
+  top: 25vh;
+  left: 15vh;
   color: khaki;
   text-align: center;
   font-weight: lighter;
@@ -112,16 +112,16 @@ ul li {
 
 /* Social Media Icons */
 #social {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vh;
+  position: relative;
+  top: 3vh;
+  left: 25vh;
   display: flex;
   flex-wrap: wrap;
   z-index: 10;
 }
 
 #social div {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 /* Responsive Styles for Mobile */

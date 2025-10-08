@@ -59,7 +59,7 @@ const About = () => {
           <strong>Phone:</strong> 7678689822
         </p>
       </div>
-      <Contact />
+   
     </div>
   );
 };
