@@ -35,14 +35,10 @@ function HandModel() {
 
 export default function Iframe() {
   return (
-    <div
+    <div id="iframe"
       style={{
-        position: "fixed",
-        right: "5%",
-        top: "15%",
-        width: "65%",
-        height: "65%",
-        zIndex: 999,
+       
+      
       }}
     >
       <Canvas shadows camera={{ position: [0, -1, -5], fov: -60 }}>
