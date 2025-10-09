@@ -13,6 +13,7 @@ const Rooted = () => {
 
   const routeOrder = ["/", "/about", "/projects"];
 
+  // Desktop scroll
   useEffect(() => {
     const handleScroll = (e) => {
       scrollAccum.current += e.deltaY;
@@ -25,13 +26,13 @@ const Rooted = () => {
             // Scroll Down
             if (currentIndex < routeOrder.length - 1) {
               navigate(routeOrder[currentIndex + 1]);
-              scrollAccum.current = 0; // reset
+              scrollAccum.current = 0;
             }
           } else if (scrollAccum.current < -threshold) {
             // Scroll Up
             if (currentIndex > 0) {
               navigate(routeOrder[currentIndex - 1]);
-              scrollAccum.current = 0; // reset
+              scrollAccum.current = 0;
             }
           }
 
@@ -44,6 +45,50 @@ const Rooted = () => {
 
     window.addEventListener("wheel", handleScroll);
     return () => window.removeEventListener("wheel", handleScroll);
+  }, [location, navigate]);
+
+  // Mobile touch support
+  useEffect(() => {
+    let startY = 0;
+
+    const handleTouchStart = (e) => {
+      startY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      const deltaY = startY - e.touches[0].clientY;
+
+      if (Math.abs(deltaY) < 50 || ticking.current) return; // Threshold and throttle
+
+      ticking.current = true;
+      const currentIndex = routeOrder.indexOf(location.pathname);
+
+      if (deltaY > 0) {
+        // Swipe up → next page
+        if (currentIndex < routeOrder.length - 1) {
+          navigate(routeOrder[currentIndex + 1]);
+        }
+      } else {
+        // Swipe down → previous page
+        if (currentIndex > 0) {
+          navigate(routeOrder[currentIndex - 1]);
+        }
+      }
+
+      startY = e.touches[0].clientY;
+
+      setTimeout(() => {
+        ticking.current = false;
+      }, 800); // Same throttle as desktop
+    };
+
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
   }, [location, navigate]);
 
   return (
