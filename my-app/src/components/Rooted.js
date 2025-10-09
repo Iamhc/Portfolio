@@ -58,7 +58,7 @@ const Rooted = () => {
     const handleTouchMove = (e) => {
       const deltaY = startY - e.touches[0].clientY;
 
-      if (Math.abs(deltaY) < 400 || ticking.current) return; // Threshold and throttle
+      if (Math.abs(deltaY) < 150 || ticking.current) return; // Threshold and throttle
 
       ticking.current = true;
       const currentIndex = routeOrder.indexOf(location.pathname);

@@ -16,18 +16,18 @@ const Project = () => {
   // Project data with images
   const projects = [
     {
-      title: "Login System",
-      image: LoginSystem,
-      description:
-        "A secure login system using the MERN stack (MongoDB, Express.js, React, Node.js).",
-      link: "https://contact-us-mn.vercel.app/", // Added link
-    },
-    {
       title: "Swiggy Clone",
       image: SwiggyClone,
       description:
         "A Swiggy-like food delivery app using real-time Swiggy API data. Used: React, Tailwind, APIs.",
       link: "https://github.com/Iamhc/Food-delievery",
+    },
+    {
+      title: "Login System",
+      image: LoginSystem,
+      description:
+        "A secure login system using the MERN stack (MongoDB, Express.js, React, Node.js).",
+      link: "https://contact-us-mn.vercel.app/", // Added link
     },
     {
       title: "Afro Hair Business Website",
