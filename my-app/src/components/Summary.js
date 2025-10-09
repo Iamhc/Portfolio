@@ -36,7 +36,7 @@ let Summary = () => {
           Let's Connect
         </motion.div>
 
-        <div className="mt-4">
+        <div className="">
           <Contact />
         </div>
       </div>

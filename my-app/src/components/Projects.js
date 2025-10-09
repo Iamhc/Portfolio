@@ -2,18 +2,18 @@ import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
 import Contact from "./Contact";
+import { motion } from "framer-motion"; // ✅ added
 
-// Import images from Project-Pics folder
+// Import images
 import AfroHair from "./Project-Pics/Afro-hair1.png";
 import Chloro from "./Project-Pics/Chloro1.png";
 import Form from "./Project-Pics/Form.png";
 import Front from "./Project-Pics/Front1.png";
 import Skinoy from "./Project-Pics/Skinoy1.png";
 import SwiggyClone from "./Project-Pics/Swiggy-clone.png";
-import LoginSystem from "./Project-Pics/Login.png"; // Added Login System
+import LoginSystem from "./Project-Pics/Login.png";
 
 const Project = () => {
-  // Project data with images
   const projects = [
     {
       title: "Swiggy Clone",
@@ -27,7 +27,7 @@ const Project = () => {
       image: LoginSystem,
       description:
         "A secure login system using the MERN stack (MongoDB, Express.js, React, Node.js).",
-      link: "https://contact-us-mn.vercel.app/", // Added link
+      link: "https://contact-us-mn.vercel.app/",
     },
     {
       title: "Afro Hair Business Website",
@@ -66,18 +66,32 @@ const Project = () => {
   ];
 
   return (
-    <div id="Projectbody">
+    <motion.div
+      id="Projectbody"
+      initial={{ opacity: 0, y: 50 }} // fade-in from below
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <Links />
       <Bar />
 
       <div className="projects-container">
         {projects.map((project, index) => (
-          <a
+          <motion.a
             key={index}
-            href={project.link || "#"} // Adds link if available
+            href={project.link || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="project-card-link"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{
+              duration: 0.7,
+              delay: index * 0.15, // ⏱ each card fades one after another
+              ease: "easeOut",
+            }}
           >
             <div className="project-card">
               <img
@@ -88,10 +102,10 @@ const Project = () => {
               <p>{project.title}</p>
               <p id="cardstuff">{project.description}</p>
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -230,7 +230,7 @@ ul li {
   /* Place social icons at the bottom */
   #social {
     position: absolute;
-    top:20vh;
+    top:22vh;
     left: 37vh;
     transform: translateX(-80%);
     margin-bottom: 10px;
