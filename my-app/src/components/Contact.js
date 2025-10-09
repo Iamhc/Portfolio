@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div id="social">
-      <div style={{ marginTop: "2px" }}>
+      <div style={{ marginTop: "1.5px" }}>
         <a
           href="https://github.com/Iamhc"
           target="_blank"
@@ -14,7 +14,7 @@ const Contact = () => {
           />
         </a>
       </div>
-      <div style={{ marginTop: "2px" }}>
+      <div style={{ marginTop: "1.5px" }}>
         <a
           href="https://www.linkedin.com/in/himanshu-choudhary-188161218/"
           target="_blank"
@@ -27,7 +27,7 @@ const Contact = () => {
           />
         </a>
       </div>
-      <div style={{ marginTop: "2px" }}>
+      <div style={{ marginTop: "1.5px" }}>
         <a
           href="https://www.sololearn.com/en/profile/19733358"
           target="_blank"
