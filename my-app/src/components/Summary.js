@@ -23,9 +23,10 @@ let Summary = () => {
         <motion.div
           className="mt-[10px] font-extrabold text-transparent bg-clip-text drop-shadow-lg"
           style={{
-            fontSize: "clamp(1.8rem, 6vw, 3rem)", // slightly smaller than before
+            fontSize: "clamp(1.62rem, 5.4vw, 2.7rem)", // 10% smaller
             backgroundImage:
-              "linear-gradient(90deg, #8b5cf6, #ec4899, #facc15)", // purple → pink → yellow
+              "linear-gradient(90deg, #8b5cf6, #ec4899, #facc15)",
+            transform: "scale(0.9)", // optional extra scale
           }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +36,7 @@ let Summary = () => {
           Let's Connect
         </motion.div>
 
-        <div className="">
+        <div className="mt-4">
           <Contact />
         </div>
       </div>
