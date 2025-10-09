@@ -5,7 +5,7 @@ let Summary = () => {
       <div id="summary" className="text-gray-800 text-lg md:text-xl ">
         <ul className="list-disc list-inside space-y-2">
           <li>
-            a Mern stack developer with a keen interest in
+            a mern stack developer with a keen interest in
             Next.js,Typescript,React js,Three.js.
           </li>
           <li>my other interests are AI agents, autonomous systems.</li>
