@@ -63,7 +63,7 @@ const Rooted = () => {
 
       // Different thresholds
       const verticalThreshold = 210;
-      const horizontalThreshold = 120; // less coefficient (more sensitive)
+      const horizontalThreshold = 80; // less coefficient (more sensitive)
 
       if (ticking.current) return;
 
