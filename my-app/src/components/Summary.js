@@ -21,22 +21,25 @@ let Summary = () => {
 
         {/* Let's Connect Section */}
         <motion.div
-          className="mt-[10px] font-extrabold text-transparent bg-clip-text drop-shadow-lg"
+          className="mt-[10px] font-extrabold text-transparent bg-clip-text drop-shadow-lg 
+                     cursor-pointer select-none transition-all duration-700 ease-in-out"
           style={{
-            fontSize: "clamp(1.62rem, 5.4vw, 2.7rem)", // 10% smaller
+            fontSize: "clamp(1.62rem, 5.4vw, 2.7rem)",
             backgroundImage:
-              "linear-gradient(90deg, #8b5cf6, #ec4899, #facc15)",
-            transform: "scale(0.9)", // optional extra scale
+              "linear-gradient(90deg, #8b5cf6, #ec4899, #facc15)", // default gradient
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
           }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1 }}
+          whileHover={{
+            backgroundImage:
+              "linear-gradient(90deg, #06b6d4, #3b82f6, #a855f7)", // hover gradient
+            transition: { duration: 0.8, ease: "easeInOut" },
+          }}
         >
           Let's Connect
         </motion.div>
 
-        <div className="">
+        <div>
           <Contact />
         </div>
       </div>
