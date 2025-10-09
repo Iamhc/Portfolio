@@ -32,10 +32,10 @@ let Summary = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
         >
-          Let's Connect &gt;
+          Let's Connect
         </motion.div>
 
-        <div className="mt-4">
+        <div className="">
           <Contact />
         </div>
       </div>
