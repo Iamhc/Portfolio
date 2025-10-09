@@ -12,7 +12,7 @@ function Home() {
     <div id="Home">
       <Links />
       <Bar />
-      
+
       <Iframe />
       <Summary />
       <Heading />

@@ -9,8 +9,8 @@ const Contact = () => {
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gcK7Go3mcVhvMExOd9mEr1cOzS1Il6AvIw&s"
-            width="20px"
-            height="20px"
+            width="30px"
+            height="30px"
           />
         </a>
       </div>
@@ -22,8 +22,8 @@ const Contact = () => {
         >
           <img
             src="https://freelogopng.com/images/all_img/1656996524linkedin-app-icon.png"
-            width="20px"
-            height="20px"
+            width="30px"
+            height="30px"
           />
         </a>
       </div>
@@ -35,8 +35,8 @@ const Contact = () => {
         >
           <img
             src="https://yt3.ggpht.com/a-/AAuE7mB2k0wtjRtVLy13o72mHZKkrYwlz9qDEuW-4w=s900-mo-c-c0xffffffff-rj-k-no"
-            width="20px"
-            height="20px"
+            width="30px"
+            height="30px"
           />
         </a>
       </div>
