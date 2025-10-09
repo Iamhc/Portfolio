@@ -35,12 +35,7 @@ function HandModel() {
 
 export default function Iframe() {
   return (
-    <div id="iframe"
-      style={{
-       
-      
-      }}
-    >
+    <div id="iframe" style={{}}>
       <Canvas shadows camera={{ position: [0, -1, -5], fov: -60 }}>
         <ambientLight intensity={1} />
         <hemisphereLight

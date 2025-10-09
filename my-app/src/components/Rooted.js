@@ -62,8 +62,8 @@ const Rooted = () => {
       const currentIndex = routeOrder.indexOf(location.pathname);
 
       // Different thresholds
-      const verticalThreshold = 210;
-      const horizontalThreshold = 80; // less coefficient (more sensitive)
+      const verticalThreshold = 220;
+      const horizontalThreshold = 90; // less coefficient (more sensitive)
 
       if (ticking.current) return;
 
