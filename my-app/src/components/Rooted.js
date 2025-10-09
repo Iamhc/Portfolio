@@ -9,7 +9,7 @@ const Rooted = () => {
   const location = useLocation();
   const scrollAccum = useRef(0); // Accumulate scroll
   const ticking = useRef(false); // Throttle scroll
-  const threshold = 200; // Adjust scroll threshold for route change
+  const threshold = 450; // Adjust scroll threshold for route change
 
   const routeOrder = ["/", "/about", "/projects"];
 
@@ -58,7 +58,7 @@ const Rooted = () => {
     const handleTouchMove = (e) => {
       const deltaY = startY - e.touches[0].clientY;
 
-      if (Math.abs(deltaY) < 50 || ticking.current) return; // Threshold and throttle
+      if (Math.abs(deltaY) < 400 || ticking.current) return; // Threshold and throttle
 
       ticking.current = true;
       const currentIndex = routeOrder.indexOf(location.pathname);
