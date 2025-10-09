@@ -7,9 +7,9 @@ import Projects from "./Projects";
 const Rooted = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const scrollAccum = useRef(0); // Accumulate scroll
-  const ticking = useRef(false); // Throttle scroll
-  const threshold = 450; // Adjust scroll threshold for route change
+  const scrollAccum = useRef(0);
+  const ticking = useRef(false);
+  const threshold = 450; // scroll threshold (desktop)
 
   const routeOrder = ["/", "/about", "/projects"];
 
@@ -23,13 +23,13 @@ const Rooted = () => {
           const currentIndex = routeOrder.indexOf(location.pathname);
 
           if (scrollAccum.current > threshold) {
-            // Scroll Down
+            // Scroll down → next page
             if (currentIndex < routeOrder.length - 1) {
               navigate(routeOrder[currentIndex + 1]);
               scrollAccum.current = 0;
             }
           } else if (scrollAccum.current < -threshold) {
-            // Scroll Up
+            // Scroll up → previous page
             if (currentIndex > 0) {
               navigate(routeOrder[currentIndex - 1]);
               scrollAccum.current = 0;
@@ -38,7 +38,6 @@ const Rooted = () => {
 
           ticking.current = false;
         });
-
         ticking.current = true;
       }
     };
@@ -47,39 +46,60 @@ const Rooted = () => {
     return () => window.removeEventListener("wheel", handleScroll);
   }, [location, navigate]);
 
-  // Mobile touch support
+  // Mobile swipe support (vertical + horizontal)
   useEffect(() => {
     let startY = 0;
+    let startX = 0;
 
     const handleTouchStart = (e) => {
       startY = e.touches[0].clientY;
+      startX = e.touches[0].clientX;
     };
 
     const handleTouchMove = (e) => {
       const deltaY = startY - e.touches[0].clientY;
-
-      if (Math.abs(deltaY) < 210 || ticking.current) return; // Threshold and throttle
-
-      ticking.current = true;
+      const deltaX = startX - e.touches[0].clientX;
       const currentIndex = routeOrder.indexOf(location.pathname);
 
-      if (deltaY > 0) {
-        // Swipe up → next page
-        if (currentIndex < routeOrder.length - 1) {
+      // Different thresholds
+      const verticalThreshold = 210;
+      const horizontalThreshold = 120; // less coefficient (more sensitive)
+
+      if (ticking.current) return;
+
+      // Vertical swipe
+      if (
+        Math.abs(deltaY) > verticalThreshold &&
+        Math.abs(deltaY) > Math.abs(deltaX)
+      ) {
+        ticking.current = true;
+
+        if (deltaY > 0 && currentIndex < routeOrder.length - 1) {
           navigate(routeOrder[currentIndex + 1]);
-        }
-      } else {
-        // Swipe down → previous page
-        if (currentIndex > 0) {
+        } else if (deltaY < 0 && currentIndex > 0) {
           navigate(routeOrder[currentIndex - 1]);
         }
+
+        setTimeout(() => (ticking.current = false), 800);
       }
 
-      startY = e.touches[0].clientY;
+      // Horizontal swipe (right/left)
+      else if (
+        Math.abs(deltaX) > horizontalThreshold &&
+        Math.abs(deltaX) > Math.abs(deltaY)
+      ) {
+        ticking.current = true;
 
-      setTimeout(() => {
-        ticking.current = false;
-      }, 800); // Same throttle as desktop
+        if (deltaX > 0 && currentIndex < routeOrder.length - 1) {
+          // swipe left → next
+          navigate(routeOrder[currentIndex + 1]);
+        } else if (deltaX < 0 && currentIndex > 0) {
+          // swipe right → previous
+          navigate(routeOrder[currentIndex - 1]);
+        }
+
+        setTimeout(() => (ticking.current = false), 800);
+      }
     };
 
     window.addEventListener("touchstart", handleTouchStart);
