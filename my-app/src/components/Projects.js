@@ -2,7 +2,6 @@ import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
 import Contact from "./Contact";
-import { motion } from "framer-motion"; // ✅ added
 
 // Import images
 import AfroHair from "./Project-Pics/Afro-hair1.png";
@@ -66,32 +65,18 @@ const Project = () => {
   ];
 
   return (
-    <motion.div
-      id="Projectbody"
-      initial={{ opacity: 0, y: 50 }} // fade-in from below
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-    >
+    <div id="Projectbody">
       <Links />
       <Bar />
 
       <div className="projects-container">
         {projects.map((project, index) => (
-          <motion.a
+          <a
             key={index}
             href={project.link || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="project-card-link"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{
-              duration: 0.7,
-              delay: index * 0.15, // ⏱ each card fades one after another
-              ease: "easeOut",
-            }}
           >
             <div className="project-card">
               <img
@@ -102,10 +87,10 @@ const Project = () => {
               <p>{project.title}</p>
               <p id="cardstuff">{project.description}</p>
             </div>
-          </motion.a>
+          </a>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
