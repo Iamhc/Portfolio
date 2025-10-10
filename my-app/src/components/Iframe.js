@@ -14,7 +14,7 @@ function Loader() {
 }
 
 function HandModel() {
-  const { scene } = useGLTF(process.env.PUBLIC_URL + "/hand_compressed.glb");
+  const { scene } = useGLTF(process.env.PUBLIC_URL + "/model_optimized.glb");
 
   scene.traverse((child) => {
     if (child.isMesh) {
