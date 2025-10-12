@@ -16,7 +16,7 @@ const Project = () => {
   const projects = [
       {
       title: "Dear AI",
-      image: null,
+      image: Dear,
       description:
         "Conversational AI app with React frontend, Node.js backend, and SQLite for chat history persistence.",
       link: "https://dear-gules.vercel.app/",
