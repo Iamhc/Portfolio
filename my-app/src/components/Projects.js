@@ -14,6 +14,13 @@ import LoginSystem from "./Project-Pics/Login.png";
 
 const Project = () => {
   const projects = [
+      {
+      title: "Dear AI",
+      image: null,
+      description:
+        "Conversational AI app with React frontend, Node.js backend, and SQLite for chat history persistence.",
+      link: "https://dear-gules.vercel.app/",
+    },
     {
       title: "Swiggy Clone",
       image: SwiggyClone,
