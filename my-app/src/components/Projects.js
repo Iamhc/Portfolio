@@ -26,7 +26,7 @@ const Project = () => {
       image: SwiggyClone,
       description:
         "A Swiggy-like food delivery app using real-time Swiggy API data. Used: React, Tailwind, APIs.",
-      link: "https://swiggy-ten-alpha.vercel.app/",
+      link: "https://github.com/Iamhc/Swiggy",
     },
     {
       title: "Login System",
