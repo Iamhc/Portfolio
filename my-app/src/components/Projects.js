@@ -21,13 +21,13 @@ const Project = () => {
         "Conversational AI app with React frontend, Node.js backend, and SQLite for chat history persistence.",
       link: "https://dear-gules.vercel.app/",
     },
-    {
-      title: "Swiggy Clone",
-      image: SwiggyClone,
-      description:
-        "A Swiggy-like food delivery app using real-time Swiggy API data. Used: React, Tailwind, APIs.",
-      link: "https://github.com/Iamhc/Swiggy",
-    },
+   {
+  title: "Swiggy Clone",
+  image: SwiggyClone,
+  description:
+    "A fully responsive Swiggy-like food delivery app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend, and Node.js/Express backend for handling API requests and CORS.",
+  link: "https://github.com/Iamhc/Swiggy",
+},
     {
       title: "Login System",
       image: LoginSystem,
