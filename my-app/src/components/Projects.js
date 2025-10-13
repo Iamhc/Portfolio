@@ -25,7 +25,7 @@ const Project = () => {
   title: "Swiggy Clone",
   image: SwiggyClone,
   description:
-    "A fully responsive Swiggy-like food delivery app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend, and Node.js/Express backend for handling API requests and CORS.",
+    "Responsive Swiggy-like food delivery app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend,and Node.js/Express backend for handling API requests and CORS.",
   link: "https://github.com/Iamhc/Swiggy",
 },
     {
