@@ -1,7 +1,7 @@
 import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
-import Contact from "./Contact";
+
 import Dear from "./Project-Pics/Dear.png";
 // Import images
 import AfroHair from "./Project-Pics/Afro-hair1.png";
