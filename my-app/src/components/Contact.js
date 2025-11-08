@@ -1,44 +1,34 @@
+import React from "react";
+import "../App.css";
+
 const Contact = () => {
   return (
-    <div id="social">
-      <div style={{ marginTop: "1px" }}>
-        <a
-          href="https://github.com/Iamhc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gcK7Go3mcVhvMExOd9mEr1cOzS1Il6AvIw&s"
-            width="25px"
-            height="25px"
-          />
-        </a>
+    <div className="contact-container">
+      <div className="contact-card">
+        <img
+          src="/images/email-icon.png"
+          alt="Email icon"
+          className="contact-icon"
+        />
+        <p>Email: example@gmail.com</p>
       </div>
-      <div style={{ marginTop: "1px" }}>
-        <a
-          href="https://www.linkedin.com/in/himanshu-choudhary-188161218/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://freelogopng.com/images/all_img/1656996524linkedin-app-icon.png"
-            width="25px"
-            height="25px"
-          />
-        </a>
+
+      <div className="contact-card">
+        <img
+          src="/images/phone-icon.png"
+          alt="Phone icon"
+          className="contact-icon"
+        />
+        <p>Phone: +91 9876543210</p>
       </div>
-      <div style={{ marginTop: "1px" }}>
-        <a
-          href="https://www.sololearn.com/en/profile/19733358"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://yt3.ggpht.com/a-/AAuE7mB2k0wtjRtVLy13o72mHZKkrYwlz9qDEuW-4w=s900-mo-c-c0xffffffff-rj-k-no"
-            width="25px"
-            height="25px"
-          />
-        </a>
+
+      <div className="contact-card">
+        <img
+          src="/images/location-icon.png"
+          alt="Location icon"
+          className="contact-icon"
+        />
+        <p>Location: New Delhi, India</p>
       </div>
     </div>
   );
