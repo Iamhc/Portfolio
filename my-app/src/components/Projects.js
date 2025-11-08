@@ -23,13 +23,6 @@ const Project = () => {
       link: "https://dear-gules.vercel.app/",
     },
     {
-      title: "ShopHub",
-      image: Shop, // ✅ Using local image instead of remote URL
-      description:
-        "ShopHub is a modern e-commerce web application built with React and Bootstrap. It offers a seamless shopping experience with features like user authentication, product browsing, and shopping cart management.",
-      link: "https://e-comm-two-neon.vercel.app/",
-    },
-    {
       title: "Swiggy Clone",
       image: SwiggyClone,
       description:
@@ -42,6 +35,14 @@ const Project = () => {
       description:
         "A secure login system using the MERN stack (MongoDB, Express.js, React, Node.js).",
       link: "https://contact-us-mn.vercel.app/",
+    },
+    
+    {
+      title: "ShopHub",
+      image: Shop, // ✅ Using local image instead of remote URL
+      description:
+        "ShopHub is a modern e-commerce web application built with React and Bootstrap. It offers a seamless shopping experience with features like user authentication, product browsing, and shopping cart management.",
+      link: "https://e-comm-two-neon.vercel.app/",
     },
     {
       title: "Afro Hair Business Website",
