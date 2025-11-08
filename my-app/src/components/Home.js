@@ -6,7 +6,7 @@ import Links from "../Utils/Links";
 import Bar from "./Bar";
 import Summary from "./Summary";
 import Heading from "./Heading";
-import Contact from "./Contact";
+
 function Home() {
   return (
     <div id="Home">
