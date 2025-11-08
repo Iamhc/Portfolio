@@ -2,8 +2,8 @@ import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
 
-import Dear from "./Project-Pics/Dear.png";
 // Import images
+import Dear from "./Project-Pics/Dear.png";
 import AfroHair from "./Project-Pics/Afro-hair1.png";
 import Chloro from "./Project-Pics/Chloro1.png";
 import Form from "./Project-Pics/Form.png";
@@ -14,20 +14,20 @@ import LoginSystem from "./Project-Pics/Login.png";
 
 const Project = () => {
   const projects = [
-      {
+    {
       title: "Dear AI",
       image: Dear,
       description:
         "Conversational AI app with React frontend, Node.js backend, and SQLite for chat history persistence.",
       link: "https://dear-gules.vercel.app/",
     },
-   {
-  title: "Swiggy Clone",
-  image: SwiggyClone,
-  description:
-    "Responsive Swiggy-like app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend,and Node.js/Express backend for handling API requests and CORS.",
-  link: "https://github.com/Iamhc/Swiggy",
-},
+    {
+      title: "Swiggy Clone",
+      image: SwiggyClone,
+      description:
+        "Responsive Swiggy-like app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend, and Node.js/Express backend for handling API requests and CORS.",
+      link: "https://github.com/Iamhc/Swiggy",
+    },
     {
       title: "Login System",
       image: LoginSystem,
@@ -36,13 +36,13 @@ const Project = () => {
       link: "https://contact-us-mn.vercel.app/",
     },
     {
-  title: "ShopHub",
-  image: "https://private-user-images.githubusercontent.com/86661174/511670815-6aa566bf-b0b0-4354-a335-a35e1c7da844.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjI2MDQ2MzAsIm5iZiI6MTc2MjYwNDMzMCwicGF0aCI6Ii84NjY2MTE3NC81MTE2NzA4MTUtNmFhNTY2YmYtYjBiMC00MzU0LWEzMzUtYTM1ZTFjN2RhODQ0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTExMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMTA4VDEyMTg1MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThkOWUxODZiY2YxMzkxNzc5M2M0ODgwNjExOWFmNjM0NTgzOThmOTY2OGIzMDhmN2Q1YjY5ZDRjZjk0MzQzNGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.QY3t3gNJoZUQKFNNAIfZtYAJXTOiOC0Mz_NVupPEtyk",
-  description:
-    "ShopHub is a modern e-commerce web application built with React and Bootstrap. It offers a seamless shopping experience with features like user authentication, product browsing, and shopping cart management.",
-  link: "https://github.com/Iamhc/E-comm",
-},
-
+      title: "ShopHub",
+      image:
+        "https://private-user-images.githubusercontent.com/86661174/511670815-6aa566bf-b0b0-4354-a335-a35e1c7da844.png",
+      description:
+        "ShopHub is a modern e-commerce web application built with React and Bootstrap. It offers a seamless shopping experience with features like user authentication, product browsing, and shopping cart management.",
+      link: "https://github.com/Iamhc/E-comm",
+    },
     {
       title: "Afro Hair Business Website",
       image: AfroHair,
@@ -96,7 +96,7 @@ const Project = () => {
             <div className="project-card">
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} preview`}
                 className="project-image"
               />
               <p>{project.title}</p>
@@ -110,3 +110,4 @@ const Project = () => {
 };
 
 export default Project;
+
