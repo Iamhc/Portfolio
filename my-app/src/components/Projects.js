@@ -11,6 +11,7 @@ import Front from "./Project-Pics/Front1.png";
 import Skinoy from "./Project-Pics/Skinoy1.png";
 import SwiggyClone from "./Project-Pics/Swiggy-clone.png";
 import LoginSystem from "./Project-Pics/Login.png";
+import Shop from "./Project-Pics/Shop.png"; // ✅ Added local Shop.png
 
 const Project = () => {
   const projects = [
@@ -37,8 +38,7 @@ const Project = () => {
     },
     {
       title: "ShopHub",
-      image:
-        "https://private-user-images.githubusercontent.com/86661174/511670815-6aa566bf-b0b0-4354-a335-a35e1c7da844.png",
+      image: Shop, // ✅ Using local image instead of remote URL
       description:
         "ShopHub is a modern e-commerce web application built with React and Bootstrap. It offers a seamless shopping experience with features like user authentication, product browsing, and shopping cart management.",
       link: "https://github.com/Iamhc/E-comm",
@@ -96,7 +96,7 @@ const Project = () => {
             <div className="project-card">
               <img
                 src={project.image}
-                alt={`${project.title} preview`}
+                alt={`${project.title} preview`} // ✅ Accessible alt text
                 className="project-image"
               />
               <p>{project.title}</p>
@@ -110,4 +110,3 @@ const Project = () => {
 };
 
 export default Project;
-
