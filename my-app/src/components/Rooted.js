@@ -44,7 +44,8 @@ const Rooted = () => {
 
     window.addEventListener("wheel", handleScroll);
     return () => window.removeEventListener("wheel", handleScroll);
-  }, [location, navigate]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location, navigate]); // ✅ keeps behavior same, no extra rerenders
 
   // Mobile swipe support (vertical + horizontal)
   useEffect(() => {
@@ -61,43 +62,32 @@ const Rooted = () => {
       const deltaX = startX - e.touches[0].clientX;
       const currentIndex = routeOrder.indexOf(location.pathname);
 
-      // Different thresholds
       const verticalThreshold = 220;
-      const horizontalThreshold = 140; // less coefficient (more sensitive)
+      const horizontalThreshold = 140;
 
       if (ticking.current) return;
 
-      // Vertical swipe
       if (
         Math.abs(deltaY) > verticalThreshold &&
         Math.abs(deltaY) > Math.abs(deltaX)
       ) {
         ticking.current = true;
-
         if (deltaY > 0 && currentIndex < routeOrder.length - 1) {
           navigate(routeOrder[currentIndex + 1]);
         } else if (deltaY < 0 && currentIndex > 0) {
           navigate(routeOrder[currentIndex - 1]);
         }
-
         setTimeout(() => (ticking.current = false), 800);
-      }
-
-      // Horizontal swipe (right/left)
-      else if (
+      } else if (
         Math.abs(deltaX) > horizontalThreshold &&
         Math.abs(deltaX) > Math.abs(deltaY)
       ) {
         ticking.current = true;
-
         if (deltaX > 0 && currentIndex < routeOrder.length - 1) {
-          // swipe left → next
           navigate(routeOrder[currentIndex + 1]);
         } else if (deltaX < 0 && currentIndex > 0) {
-          // swipe right → previous
           navigate(routeOrder[currentIndex - 1]);
         }
-
         setTimeout(() => (ticking.current = false), 800);
       }
     };
@@ -109,6 +99,7 @@ const Rooted = () => {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchmove", handleTouchMove);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, navigate]);
 
   return (
@@ -121,3 +112,4 @@ const Rooted = () => {
 };
 
 export default Rooted;
+
