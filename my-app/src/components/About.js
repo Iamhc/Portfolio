@@ -1,8 +1,7 @@
 import "../App.css";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
-import Contact from "./Contact";
-import Android from "./Project-Pics/Android.png";
+
 import { motion } from "framer-motion";
 
 const About = () => {
