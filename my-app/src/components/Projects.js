@@ -12,7 +12,7 @@ import Skinoy from "./Project-Pics/Skinoy1.png";
 import SwiggyClone from "./Project-Pics/Swiggy-clone.png";
 import LoginSystem from "./Project-Pics/Login.png";
 import Shop from "./Project-Pics/Shop.png"; // ✅ Added local Shop.png
-import os from "./Project-Pics/os.png";
+import os from "./Project-Pics/os1.png";
 
 const Project = () => {
   const projects = [
