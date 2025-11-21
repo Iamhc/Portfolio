@@ -12,6 +12,7 @@ import Skinoy from "./Project-Pics/Skinoy1.png";
 import SwiggyClone from "./Project-Pics/Swiggy-clone.png";
 import LoginSystem from "./Project-Pics/Login.png";
 import Shop from "./Project-Pics/Shop.png"; // ✅ Added local Shop.png
+import os from "./Project-Pics/os.png";
 
 const Project = () => {
   const projects = [
@@ -29,6 +30,14 @@ const Project = () => {
         "Responsive Swiggy-like app using real-time Swiggy API data. Built with React and Tailwind CSS on the frontend, and Node.js/Express backend for handling API requests and CORS.",
       link: "https://github.com/Iamhc/Swiggy",
     },
+    {
+  title: "OS Performance Dashboard",
+  image: os,   // make sure you imported this image at top
+  description:
+    "Real-time OS performance monitoring dashboard built using Next.js, Node.js/Express backend, and Chart.js visualizations. Tracks CPU, memory, network, and disk usage using system-level APIs.",
+  link: "https://github.com/Iamhc/os-performance-frontend/tree/master/my-next-app",
+    },
+
     {
       title: "Login System",
       image: LoginSystem,
