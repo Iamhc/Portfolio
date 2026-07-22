@@ -5,21 +5,11 @@ import Bar from "./Bar";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
-
   return (
     <motion.div
       id="aboutbody"
       initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <Links />
@@ -27,133 +17,118 @@ const About = () => {
 
       <motion.div
         className="about-container"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 style={{ marginTop: "10px" }}>About Me</h2>
+
+        <h2>About Me</h2>
 
         <p>
-          Software Engineer with hands-on production experience building
-          scalable full-stack web applications and AI-integrated backend
-          systems. Strong foundation in system design, OOP, data structures &
-          algorithms, and computer science fundamentals. Passionate about
-          clean, maintainable, production-level code.
+          Software Engineer focused on building scalable full-stack web
+          applications and interactive experiences. I enjoy working with
+          modern technologies like React, Node.js, Three.js, and AI-based
+          systems.
         </p>
 
-        <h2 style={{ marginTop: "20px" }}>Experience</h2>
+
+        <h2>Experience</h2>
 
         <ul>
           <li>
-            <strong>To Let Globe</strong> — Full Stack Developer Intern (Jan
-            2025 – Mar 2025)
+            <strong>To-Let Globe</strong> — Full Stack Developer
             <br />
-            Built and deployed production-grade full-stack features using
-            React.js, Node.js, Express.js, and REST APIs on a live platform
-            serving 500+ users. Designed and optimized MongoDB schemas with
-            indexing; implemented JWT authentication, middleware architecture,
-            and third-party API integrations.
+            Built full-stack features using MERN stack (MongoDB, Express.js,
+            React.js, Node.js). Worked on authentication, APIs, database
+            integration, and responsive UI development.
           </li>
 
           <li>
-            <strong>Rahul Sir Classes</strong> — Web Developer Intern (Oct 2024
-            – Jan 2025)
+            <strong>Rahul Sir Classes</strong> — Web Developer
             <br />
-            Built responsive React.js interfaces with REST API integration;
-            debugged and resolved 15+ performance issues improving platform
-            reliability across devices.
+            Developed educational websites using Wix, HTML, CSS, and
+            JavaScript. Improved website responsiveness and user experience.
           </li>
         </ul>
 
-        <h2 style={{ marginTop: "20px" }}>Technical Skills</h2>
+
+        <h2>Technical Skills</h2>
 
         <ul>
           <li>
-            <strong>Languages:</strong> Python, JavaScript (ES6+), TypeScript,
-            Java, C++
+            <strong>Languages:</strong> C++, Python, JavaScript, TypeScript,
+            Java, PHP
           </li>
 
           <li>
-            <strong>Backend:</strong> FastAPI, Flask, Node.js, Express.js, REST
-            APIs, JWT Auth, WebSockets
+            <strong>Frontend:</strong> React.js, Next.js, Tailwind CSS,
+            HTML5, CSS3, Three.js, WebGL
           </li>
 
           <li>
-            <strong>Frontend:</strong> React.js, Next.js, TypeScript, HTML5,
-            CSS3, Tailwind CSS, Redux, Responsive Design
+            <strong>Backend:</strong> Node.js, Express.js, REST APIs,
+            Authentication
           </li>
 
           <li>
-            <strong>Databases:</strong> MongoDB, MySQL, PostgreSQL, Redis —
-            Schema Design, Indexing, Query Optimization
+            <strong>Databases:</strong> MongoDB, MySQL, PostgreSQL
           </li>
 
           <li>
-            <strong>AI & LLM:</strong> ZukiJourney API, LangChain, Prompt
-            Engineering, AI Agents, TensorFlow, CNN
-          </li>
-
-          <li>
-            <strong>System Design:</strong> Microservices, Caching, Load
-            Balancing, Docker, CI/CD, Linux
-          </li>
-
-          <li>
-            <strong>CS Fundamentals:</strong> OOPs, OS, DBMS, Computer
-            Networks, DSA (500+ problems solved)
+            <strong>Tools:</strong> Git, GitHub, Vercel, Render, Spline,
+            Wix Website Builder
           </li>
         </ul>
 
-        <h2 style={{ marginTop: "20px" }}>Education</h2>
+
+        <h2>Education</h2>
 
         <p>
-          🎓 <strong>B.Tech in Information Technology</strong> (Aug 2023 – May
-          2027)
+          🎓 <strong>B.Tech in Information Technology</strong>
           <br />
           Guru Gobind Singh Indraprastha University, Delhi
           <br />
-          <strong>CGPA:</strong> 8.0
-          <br />
-          <strong>Relevant Coursework:</strong> Data Structures & Algorithms,
-          DBMS, Operating Systems, Computer Networks, OOP, System Design
+          2023 - 2027
         </p>
 
-        <h2 style={{ marginTop: "20px" }}>Achievements</h2>
+
+        <h2>Achievements</h2>
 
         <ul>
           <li>
-            🏆 Runner-up — All India Hackathon (Secured 2nd place among top
-            engineering teams nationwide)
+            🏆 Runner-up in All India Hackathon
           </li>
 
           <li>
-            💻 Competitive Programming — Solved 500+ problems on LeetCode &
-            GeeksforGeeks
+            💻 Solved 500+ problems on LeetCode and GeeksforGeeks
           </li>
         </ul>
 
-        <h2 style={{ marginTop: "20px" }}>Interested Areas</h2>
+
+        <h2>Interested Areas</h2>
 
         <ul>
-          <li>Full-Stack Web Development</li>
-          <li>Artificial Intelligence & LLM Integration</li>
-          <li>System Design & Scalable Architecture</li>
-          <li>Competitive Programming & DSA</li>
+          <li>Full Stack Web Development</li>
+          <li>Artificial Intelligence</li>
+          <li>3D Web Experiences</li>
+          <li>System Design</li>
         </ul>
 
-        <h2 style={{ marginTop: "20px" }}>Contact</h2>
+
+        <h2>Contact</h2>
 
         <p>
-          <strong>Email:</strong> himanshuchaudhary586@gmail.com
+          <strong>Email:</strong>
           <br />
-          <strong>Phone:</strong> +91-7678689822
+          himanshuchaudhary586@gmail.com
+          <br /><br />
+
+          <strong>Phone:</strong>
           <br />
-          <strong>LinkedIn:</strong>{" "}
-          linkedin.com/in/himanshu-choudhary-188161218
-          <br />
-          <strong>GitHub:</strong> github.com/Iamhc
+          7678689822
         </p>
+
+
       </motion.div>
     </motion.div>
   );
