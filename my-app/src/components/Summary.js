@@ -21,8 +21,10 @@ let Summary = () => {
         </ul>
 
         {/* Let's Connect Section */}
+        <br></br>
+        
         <motion.div
-          className="mt-[10px] font-extrabold text-transparent bg-clip-text drop-shadow-lg 
+          className=" font-extrabold text-transparent bg-clip-text drop-shadow-lg 
                      cursor-pointer select-none transition-all duration-700 ease-in-out"
           style={{
             fontSize: "clamp(1.62rem, 5.4vw, 2.7rem)",
