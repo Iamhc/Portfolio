@@ -240,7 +240,7 @@ ul li {
     max-width: 455px;
     margin: 5vh auto 0;
     text-align: center;
-    top: 40vh;
+    top: 37vh;
     left: 0;
     z-index: 20; /* ✅ Above model */
   }
