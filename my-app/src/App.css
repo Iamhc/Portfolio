@@ -128,7 +128,7 @@ ul li {
 /* Social Media Icons */
 #social {
   position: relative;
-  top: 3vh;
+  top: 5vh;
   left: 25vh;
   display: flex;
   flex-wrap: wrap;
