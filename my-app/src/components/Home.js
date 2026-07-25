@@ -15,7 +15,7 @@ function Home() {
 
       <Iframe />
       <Summary />
-      <Heading />
+     
     </div>
   );
 }

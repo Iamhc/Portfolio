@@ -11,6 +11,7 @@ let Summary = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div id="summary" className="text-gray-800 text-lg md:text-xl">
+        <h1 id="heading">Himanshu choudhary</h1>
         <ul className="list-disc list-inside space-y-2">
           <li>
             A MERN stack developer with a keen interest in Next.js, TypeScript,
