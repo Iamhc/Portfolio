@@ -16,7 +16,7 @@ function Loader() {
 }
 
 function HandModel() {
-  const { scene } = useGLTF("/model.glb");
+  const { scene } = useGLTF("/cmodel.glb");
   const cloudMeshRef = useRef(null);
   const cloudInitialYRef = useRef(0);
   const yellowDirLightRef = useRef(null); // ✅ Directional light ref

@@ -191,6 +191,7 @@ ul li {
   #heading {
     display: none;
   }
+
 }
 
 /* Mobile Responsive Design */
@@ -200,7 +201,7 @@ ul li {
     color: white !important;
     font-family: Raleway, sans-serif;
   }
-
+ 
   #aboutbody {
     background-color: rgb(48, 47, 47) !important;
     color: #fff;
@@ -306,7 +307,9 @@ ul li {
     color: white !important;
     font-family: Raleway, sans-serif;
   }
-
+ #connect{
+  padding: 10px;
+ }
   #aboutbody {
     background-color: rgb(48, 47, 47) !important;
     color: #fff;

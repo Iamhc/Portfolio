@@ -31,6 +31,7 @@ let Summary = () => {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
+          id="connect"
           whileHover={{
             backgroundImage:
               "linear-gradient(90deg, #06b6d4, #3b82f6, #a855f7)", // hover gradient
