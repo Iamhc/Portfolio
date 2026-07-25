@@ -1,4 +1,4 @@
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import {
   useGLTF,
   useTexture,
@@ -49,8 +49,6 @@ function HandModel() {
   textureProps.wellBase.flipY = false;
   textureProps.wellMetal.flipY = false;
 
-  const godTextures = [textureProps.texture2, textureProps.texture3, textureProps.texture4];
-
   // ✅ Create Directional Light (from vanilla code)
   useEffect(() => {
     if (!scene) return;
@@ -65,20 +63,9 @@ function HandModel() {
   useEffect(() => {
     if (!scene) return; // Guard clause - wait for scene to load
     
-    let godMeshCount = 0;
-
     scene.traverse((child) => {
       const name = child.name.toLowerCase();
       const parentName = child.parent ? child.parent.name.toLowerCase() : "";
-
-      // Check if mesh or parent is "god", "mia", or "somaskanda"
-      const isGodModel =
-        name.includes("god") ||
-        parentName.includes("god") ||
-        name.includes("somaskanda") ||
-        parentName.includes("somaskanda") ||
-        name.includes("mia") ||
-        parentName.includes("mia");
 
       // 💡 White PointLight attachment
       if (name.includes("point") && !name.includes("yellow-light")) {
@@ -112,17 +99,9 @@ function HandModel() {
       if (child.isMesh && child.material) {
         child.material = child.material.clone();
 
-        // 🛕 GOD MODEL TEXTURE
-        if (isGodModel) {
-          const assignedTexture = godTextures[godMeshCount % godTextures.length];
-          child.material.map = assignedTexture;
-          child.material.roughness = 0.8;
-          child.material.metalness = 0.1;
-          child.material.needsUpdate = true;
-          godMeshCount++;
-        }
+       
         // ✨ BLACK MESH (Shiny)
-        else if (
+        if (
           name.includes("cylinder_7") ||
           name.includes("black") ||
           name.includes("blk")
@@ -262,7 +241,7 @@ function HandModel() {
         }
       }
     });
-  }, [scene, textureProps, godTextures]);
+  }, [scene, textureProps]);
 
   // Cast shadows
   useEffect(() => {

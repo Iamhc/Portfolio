@@ -5,7 +5,7 @@ import Iframe from "./Iframe";
 import Links from "../Utils/Links";
 import Bar from "./Bar";
 import Summary from "./Summary";
-import Heading from "./Heading";
+
 
 function Home() {
   return (
