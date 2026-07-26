@@ -247,14 +247,14 @@ ul li {
   /* Place social icons at the bottom */
   #social {
  margin-top: 10px;
- margin-left: 20vh;
+ margin-left: 13vh;
   display: flex;
   flex-wrap: wrap;
   z-index: 20; /* ✅ ABOVE model */
 }
 
 #social div {
-  margin: 0 2px;
+  margin: 0 3px;
 }
   
   .projects-container {
@@ -358,7 +358,7 @@ ul li {
 }
 
 #social div {
-  margin: 0 2px;
+  margin: 0 3px;
 }
 
   .projects-container {
