@@ -14,7 +14,7 @@ let Summary = () => {
         <h1 id="heading">Himanshu choudhary</h1>
         <ul className="list-disc list-inside space-y-2">
           <li>
-            A Software Engineer, with experience in developing full-stack applications and a keen interest in Next.js, React.js,Node.js and Three.js.
+            A Software Engineer with experience in developing full-stack applications and a keen interest in Next.js, React.js,Node.js and Three.js.
 
           </li>
           <li>My other interests are AI agents, autonomous systems.</li>
