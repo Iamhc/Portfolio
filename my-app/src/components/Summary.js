@@ -14,15 +14,15 @@ let Summary = () => {
         <h1 id="heading">Himanshu choudhary</h1>
         <ul className="list-disc list-inside space-y-2">
           <li>
-            A MERN stack developer with a keen interest in Next.js, TypeScript,
-            React.js, Three.js.
+            A Software Engineer, with experience in developing full-stack applications and a keen interest in Next.js, React.js,Node.js and Three.js.
+
           </li>
           <li>My other interests are AI agents, autonomous systems.</li>
         </ul>
 
         {/* Let's Connect Section */}
         <br></br>
-        <br></br>
+       
         <motion.div
           className=" font-extrabold text-transparent bg-clip-text drop-shadow-lg 
                      cursor-pointer select-none transition-all duration-700 ease-in-out"
