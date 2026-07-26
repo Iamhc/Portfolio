@@ -25,15 +25,13 @@ const About = () => {
 
         <ul>
           <li>
-            <strong>To-Let Globe</strong> — Full Stack Developer <br />
-            Built a login system and user interface using the MERN stack
-            (MongoDB, Express.js, React, Node.js).
+            <strong>To Let Globe</strong> — Full Stack Developer Intern (Jan 2025 – Mar 2025) <br />
+            Built and deployed production-grade full-stack features using React.js, Node.js, Express.js, and REST APIs on a live platform serving users. Designed and optimized MongoDB schemas with indexing; implemented JWT authentication.
           </li>
 
           <li>
-            <strong>Rahul Sir Classes</strong> — Web Developer <br />
-            Designed multiple educational websites using Wix, HTML, CSS, and
-            JavaScript.
+            <strong>Rahul Sir Classes</strong> — Web Developer Intern (Oct 2024 – Jan 2025) <br />
+            Built responsive React.js interfaces with REST API integration; debugged and resolved 15+ performance issues improving platform reliability across devices.
           </li>
         </ul>
 
@@ -42,21 +40,27 @@ const About = () => {
 
         <ul>
           <li>
-            <strong>Languages:</strong> C/C++, Python, JavaScript, TypeScript,
-            HTML+CSS, PHP
+            <strong>Languages:</strong> Python, JavaScript (ES6+), TypeScript, Java, C++
           </li>
 
           <li>
-            <strong>Libraries & Frameworks:</strong> Next.js, React.js,
-            Electron.js, Three.js, WebGL, Express.js, Tailwind CSS
+            <strong>Backend:</strong> FastAPI, Node.js, Express.js, REST APIs, WebSockets
           </li>
 
           <li>
-            <strong>Databases & Cloud:</strong> MongoDB, Vercel, Render
+            <strong>Frontend:</strong> React.js, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS
           </li>
 
           <li>
-            <strong>Tools:</strong> Spline, Wix Website Builder
+            <strong>Databases:</strong> MongoDB, MySQL,Caching (Redis)
+          </li>
+
+          <li>
+            <strong>AI & LLM:</strong> ZukiJourney API, LangChain, Prompt Engineering, AI Agents, TensorFlow, CNN
+          </li>
+
+          <li>
+            <strong>DevOps & Tools:</strong> Docker, Git, GitHub, CI/CD Basics, Postman, Agile/Scrum
           </li>
         </ul>
 
@@ -64,16 +68,18 @@ const About = () => {
         <h2 style={{ marginTop: "10px" }}>Education</h2>
 
         <p>
-          🎓 B.Tech in Information Technology (2023–2027) <br />
-          Guru Gobind Singh Indraprastha University, Delhi
+          🎓 B.Tech in Information Technology (Aug 2023 – May 2027) <br />
+          Guru Gobind Singh Indraprastha University, Delhi <br />
+          CGPA: 8.0 <br />
+          Relevant Coursework: DSA, DBMS, Operating Systems, Computer Networks, OOP, System Design
         </p>
 
 
         <h2 style={{ marginTop: "10px" }}>Interested Areas</h2>
 
         <ul>
-          <li>Web Development</li>
-          <li>Artificial Intelligence</li>
+          <li>Full Stack Web Development</li>
+          <li>AI & LLM Integration</li>
         </ul>
 
 
@@ -81,7 +87,7 @@ const About = () => {
 
         <p>
           <strong>Email:</strong> himanshuchaudhary586@gmail.com <br />
-          <strong>Phone:</strong> 7678689822
+          <strong>Phone:</strong> +91-7678689822
         </p>
 
       </motion.div>

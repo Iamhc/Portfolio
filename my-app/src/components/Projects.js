@@ -14,19 +14,19 @@ const Project = () => {
     {
       title: "AI Agent Platform",
       image: Dear,
-      description: "Built and deployed a production-grade AI-integrated platform with autonomous agent system, task routing, and LLM responses via ZukiJourney API. Designed scalable FastAPI and Node.js REST APIs; optimized PostgreSQL and MongoDB schemas; containerized with Docker.",
+      description: "Built and deployed a AI-integrated platform with autonomous agent system, task routing, and LLM responses via ZukiJourney API. Designed scalable FastAPI and Node.js REST APIs; optimized PostgreSQL and MongoDB schemas.",
       link: "https://github.com/Iamhc/Dear-frontend",
     },
     {
       title: "AI Pipeline Builder",
       image: dump,
-      description: "Engineered production-ready FastAPI backend with real-time DAG validation (DFS); designed ACID-compliant PostgreSQL schema with optimized queries; containerized with Docker. Built React.js + TypeScript frontend with drag-and-drop UI and real-time API integration.",
+      description: "Engineered production-ready FastAPI backend with real-time DAG validation (DFS). Built React.js frontend with drag-and-drop UI and real-time API integration.",
       link: "https://github.com/Iamhc/Ai-pipeline-frontend",
     },
     {
       title: "OS Performance Dashboard",
       image: os,
-      description: "Built real-time data ingestion backend using Node.js and Python with MongoDB; deployed with Docker; optimized data pipelines for accurate live OS metric visualization. Real-time monitoring of CPU, memory, network, and disk usage.",
+      description: "Built real-time data ingestion backend using Node.js and Python with MongoDB; optimized data pipelines for accurate live OS metric visualization. Real-time monitoring of CPU, memory, network, and disk usage.",
       link: "https://github.com/Iamhc/os-performance-frontend",
     },
     {
