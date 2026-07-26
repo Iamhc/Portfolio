@@ -4,18 +4,15 @@ import "../App.css";
 const Contact = () => {
   return (
     <div id="social">
-      <div style={{ marginTop: "1px" }}>
+     
+
+      <div style={{ marginTop: "3px" }}>
         <a
           href="https://github.com/Iamhc"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gcK7Go3mcVhvMExOd9mEr1cOzS1Il6AvIw&s"
-            alt="GitHub"
-            width="25px"
-            height="25px"
-          />
+          <img src="/github.png" alt="GitHub" width="25px" height="25px" />
         </a>
       </div>
 
@@ -25,14 +22,16 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://freelogopng.com/images/all_img/1656996524linkedin-app-icon.png"
-            alt="LinkedIn"
-            width="25px"
-            height="25px"
-          />
+          <img src="/linkedin.jpg" alt="LinkedIn" width="25px" height="25px" />
         </a>
       </div>
+    {/* ✅ Gmail Added */}
+      <div style={{ marginTop: "1px" }}>
+        <a href="mailto:himanshuchaudhary586@gmail.com">
+          <img src="/gmail.png" alt="Gmail" width="25px" height="25px" />
+        </a>
+      </div>
+
 
       <div style={{ marginTop: "1px" }}>
         <a
@@ -40,17 +39,13 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://yt3.ggpht.com/a-/AAuE7mB2k0wtjRtVLy13o72mHZKkrYwlz9qDEuW-4w=s900-mo-c-c0xffffffff-rj-k-no"
-            alt="SoloLearn"
-            width="25px"
-            height="25px"
-          />
+          <img src="/sololearn.png" alt="SoloLearn" width="25px" height="25px" />
         </a>
       </div>
+
+     
     </div>
   );
 };
 
 export default Contact;
-

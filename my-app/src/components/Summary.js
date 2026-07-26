@@ -22,7 +22,7 @@ let Summary = () => {
 
         {/* Let's Connect Section */}
         <br></br>
-        
+        <br></br>
         <motion.div
           className=" font-extrabold text-transparent bg-clip-text drop-shadow-lg 
                      cursor-pointer select-none transition-all duration-700 ease-in-out"
