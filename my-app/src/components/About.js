@@ -78,17 +78,8 @@ const About = () => {
         <h2 style={{ marginTop: "10px" }}>Interested Areas</h2>
 
         <ul>
-          <li>Full Stack Web Development</li>
-          <li>AI & LLM Integration</li>
+          <li>Full Stack Web Development, AI & LLM Integration</li>
         </ul>
-
-
-        <h2 style={{ marginTop: "10px" }}>Contact</h2>
-
-        <p>
-          <strong>Email:</strong> himanshuchaudhary586@gmail.com <br />
-          <strong>Phone:</strong> +91-7678689822
-        </p>
 
       </motion.div>
     </motion.div>
