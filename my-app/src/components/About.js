@@ -26,7 +26,7 @@ const About = () => {
         <ul>
           <li>
             <strong>To Let Globe</strong> — Full Stack Developer Intern (Jan 2025 – Mar 2025) <br />
-            Built and deployed production-grade full-stack features using React.js, Node.js, Express.js, and REST APIs on a live platform serving users. Designed and optimized MongoDB schemas with indexing; implemented JWT authentication.
+            Built and deployed full-stack features using React.js, Node.js, Express.js, and REST APIs on a live platform serving users. Designed and optimized MongoDB schemas with indexing; implemented JWT authentication.
           </li>
 
           <li>
